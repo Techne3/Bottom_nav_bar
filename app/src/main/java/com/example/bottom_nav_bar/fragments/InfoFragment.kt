@@ -1,19 +1,17 @@
 package com.example.bottom_nav_bar.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.bottom_nav_bar.R
-import com.example.bottom_nav_bar.databinding.FragmentDashboardBinding
+import androidx.fragment.app.Fragment
+import com.example.bottom_nav_bar.databinding.InfoFragmentBinding
+
+class InfoFragment : Fragment() {
 
 
-class DashboardFragment : Fragment() {
-
-
-    private var _binding: FragmentDashboardBinding? = null
-    private val binding: FragmentDashboardBinding get() = _binding!!
+    private var _binding: InfoFragmentBinding? = null
+    private val binding: InfoFragmentBinding get() = _binding!!
 
 
     override fun onCreateView(
@@ -22,7 +20,7 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
 
     ): View {
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = InfoFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
